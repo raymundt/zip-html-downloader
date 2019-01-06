@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25F255BE2D690AE488A14FE3 /* Pods_WebViewTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B91E7D4BECB4DEA00ADB34D /* Pods_WebViewTest.framework */; };
 		C3DE914E21E11BD90046DAC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DE914D21E11BD90046DAC1 /* AppDelegate.swift */; };
 		C3DE915021E11BD90046DAC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DE914F21E11BD90046DAC1 /* ViewController.swift */; };
 		C3DE915321E11BD90046DAC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3DE915121E11BD90046DAC1 /* Main.storyboard */; };
 		C3DE915521E11BDB0046DAC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3DE915421E11BDB0046DAC1 /* Assets.xcassets */; };
 		C3DE915821E11BDB0046DAC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3DE915621E11BDB0046DAC1 /* LaunchScreen.storyboard */; };
+		C3DE92C521E2011C0046DAC1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C3DE92C421E2011C0046DAC1 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60D7A0A12C37EF061DA94F6E /* Pods-WebViewTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebViewTest/Pods-WebViewTest.release.xcconfig"; sourceTree = "<group>"; };
+		6B91E7D4BECB4DEA00ADB34D /* Pods_WebViewTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebViewTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DE914A21E11BD90046DAC1 /* WebViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DE914D21E11BD90046DAC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3DE914F21E11BD90046DAC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		C3DE915421E11BDB0046DAC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3DE915721E11BDB0046DAC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3DE915921E11BDB0046DAC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3DE92C421E2011C0046DAC1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ECC08D9FB0151AD338C758BB /* Pods-WebViewTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebViewTest/Pods-WebViewTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25F255BE2D690AE488A14FE3 /* Pods_WebViewTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		624301C60C33F38F5FD692B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECC08D9FB0151AD338C758BB /* Pods-WebViewTest.debug.xcconfig */,
+				60D7A0A12C37EF061DA94F6E /* Pods-WebViewTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C3DE914121E11BD90046DAC1 = {
 			isa = PBXGroup;
 			children = (
+				C3DE92C421E2011C0046DAC1 /* README.md */,
 				C3DE914C21E11BD90046DAC1 /* WebViewTest */,
 				C3DE914B21E11BD90046DAC1 /* Products */,
+				624301C60C33F38F5FD692B8 /* Pods */,
+				EBA2413CC2BE8F24DB21CD91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +83,14 @@
 			path = WebViewTest;
 			sourceTree = "<group>";
 		};
+		EBA2413CC2BE8F24DB21CD91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B91E7D4BECB4DEA00ADB34D /* Pods_WebViewTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3DE915C21E11BDB0046DAC1 /* Build configuration list for PBXNativeTarget "WebViewTest" */;
 			buildPhases = (
+				D2DC7B3261BEFF2598B5C79E /* [CP] Check Pods Manifest.lock */,
 				C3DE914621E11BD90046DAC1 /* Sources */,
 				C3DE914721E11BD90046DAC1 /* Frameworks */,
 				C3DE914821E11BD90046DAC1 /* Resources */,
+				1FB87851CE66ADFC486CA59E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3DE92C521E2011C0046DAC1 /* README.md in Resources */,
 				C3DE915821E11BDB0046DAC1 /* LaunchScreen.storyboard in Resources */,
 				C3DE915521E11BDB0046DAC1 /* Assets.xcassets in Resources */,
 				C3DE915321E11BD90046DAC1 /* Main.storyboard in Resources */,
@@ -129,6 +159,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FB87851CE66ADFC486CA59E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WebViewTest/Pods-WebViewTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Zip/Zip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebViewTest/Pods-WebViewTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2DC7B3261BEFF2598B5C79E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebViewTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3DE914621E11BD90046DAC1 /* Sources */ = {
@@ -278,9 +349,11 @@
 		};
 		C3DE915D21E11BDB0046DAC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECC08D9FB0151AD338C758BB /* Pods-WebViewTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9UAFEBF33;
 				INFOPLIST_FILE = WebViewTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,9 +368,11 @@
 		};
 		C3DE915E21E11BDB0046DAC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60D7A0A12C37EF061DA94F6E /* Pods-WebViewTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9UAFEBF33;
 				INFOPLIST_FILE = WebViewTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

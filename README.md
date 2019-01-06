@@ -1,0 +1,1 @@
+Reference to https://github.com/tech4242/wkwebview-local-resources
